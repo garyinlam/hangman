@@ -134,7 +134,7 @@ public class Output {
                 break;
             case 1:
                 System.out.println("  -----");
-                System.out.println("  |");
+                System.out.println("  |/");
                 System.out.println("  |   O");
                 System.out.println("  |  -|-");
                 System.out.println("  |   |");
@@ -144,7 +144,7 @@ public class Output {
                 break;
             case 0:
                 System.out.println("  -----");
-                System.out.println("  |   |");
+                System.out.println("  |/  |");
                 System.out.println("  |   O");
                 System.out.println("  |  -|-");
                 System.out.println("  |   |");
@@ -154,7 +154,7 @@ public class Output {
                 break;
             default:
                 System.out.println("  -----");
-                System.out.println("  |   |");
+                System.out.println("  |/  |");
                 System.out.println("  |   O   snap!");
                 System.out.println("  |  -|-");
                 System.out.println("  |   |");
