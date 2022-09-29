@@ -20,7 +20,7 @@ public class WordUtils {
 
     private static void readFile(String file, ArrayList<String> arrList){
         try {
-            FileReader fr = new FileReader("src/main/java/game/hangman/"+file);
+            FileReader fr = new FileReader("wordLists/"+file);
             BufferedReader br = new BufferedReader(fr);
             String line;
             while ((line = br.readLine()) != null){
