@@ -31,7 +31,7 @@ public class Input {
                 validInput = true;
                 retVal = input.matches("y");
             } else {
-                System.out.println("Please only y or n");
+                System.err.println("Please only y or n");
                 input = scanner.nextLine().toLowerCase();
             }
         }
@@ -47,13 +47,13 @@ public class Input {
             try {
                 retVal = Integer.parseInt(input);
                 if (retVal > max || retVal < min) {
-                    System.out.println("Please enter in an valid number ("+min+"-"+max+")");
+                    System.err.println("Please enter in an valid number ("+min+"-"+max+")");
                     input = scanner.nextLine();
                 } else {
                     validInput = true;
                 }
-            } catch (Exception e){
-                System.out.println("Please enter in an integer number only");
+            } catch (NumberFormatException e){
+                System.err.println("Please enter in an integer number only");
                 input = scanner.nextLine();
             }
         }

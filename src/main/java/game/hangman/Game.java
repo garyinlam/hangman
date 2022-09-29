@@ -39,10 +39,10 @@ public class Game {
                     player.removeLife();
                 }
             } else {
-                System.out.println("Already guessed " + guess + ". Try again.");
+                System.err.println("Already guessed " + guess + ". Try again.");
             }
 
-            System.out.println("\b \n");
+            System.out.println();
             gameOver = isGameOver();
         }
 

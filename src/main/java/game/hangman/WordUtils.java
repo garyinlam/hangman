@@ -2,12 +2,13 @@ package game.hangman;
 
 import java.io.*;
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Random;
 
 public class WordUtils {
-    private static final ArrayList<String> wordsList = new ArrayList<>();
-    private static final ArrayList<String> moviesList = new ArrayList<>();
-    private static final ArrayList<String> javaList = new ArrayList<>();
+    private static final List<String> wordsList = new ArrayList<>();
+    private static final List<String> moviesList = new ArrayList<>();
+    private static final List<String> javaList = new ArrayList<>();
 
 
     private static final Random RANDOM = new Random();
@@ -18,7 +19,7 @@ public class WordUtils {
         readFile("java.txt",javaList);
     }
 
-    private static void readFile(String file, ArrayList<String> arrList){
+    private static void readFile(String file, List<String> arrList){
         try {
             FileReader fr = new FileReader("wordLists/"+file);
             BufferedReader br = new BufferedReader(fr);

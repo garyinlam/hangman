@@ -55,7 +55,7 @@ class PlayerTest {
     }
 
     @Test
-    public void isLost_LessThan0Lives_ReturnsFalse() {
+    public void isLost_LessThan0Lives_ReturnsTrue() {
         player.removeLife();
         player.removeLife();
         player.removeLife();
