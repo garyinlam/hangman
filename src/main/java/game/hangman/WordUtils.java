@@ -7,7 +7,7 @@ import java.util.Random;
 public class WordUtils {
     private static final ArrayList<String> wordsList = new ArrayList<>();
     private static final ArrayList<String> moviesList = new ArrayList<>();
-    private static final ArrayList<String> kpopList = new ArrayList<>();
+    private static final ArrayList<String> javaList = new ArrayList<>();
 
 
     private static final Random RANDOM = new Random();
@@ -15,7 +15,7 @@ public class WordUtils {
     static {
         readFile("words.txt",wordsList);
         readFile("movies.txt",moviesList);
-        readFile("kpop.txt",kpopList);
+        readFile("java.txt",javaList);
     }
 
     private static void readFile(String file, ArrayList<String> arrList){
@@ -40,7 +40,7 @@ public class WordUtils {
             case 2:
                 return moviesList.get(RANDOM.nextInt(moviesList.size()));
             case 3:
-                return kpopList.get(RANDOM.nextInt(kpopList.size()));
+                return javaList.get(RANDOM.nextInt(javaList.size()));
             default:
                 return "";
         }

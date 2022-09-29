@@ -20,15 +20,7 @@ public class Game {
         return player.isLost() || word.isGuessed();
     }
 
-    public Player getPlayer() {
-        return player;
-    }
-
-    public Word getWordObject() {
-        return word;
-    }
-
-    public void doGame(Scanner scanner){
+    public void play(Scanner scanner){
         boolean gameOver = false;
 
         // game start

@@ -15,7 +15,8 @@ public class Main {
             // game setup
             int[] gameParams = setUp(scanner);
             Game game = new Game(gameParams[0],gameParams[1]);
-            game.doGame(scanner);
+
+            game.play(scanner);
 
             // play again
             System.out.println("\nPlay again? (y/n)");
@@ -32,7 +33,7 @@ public class Main {
         System.out.println("What category of words would you like?");
         System.out.println("1 - Normal words");
         System.out.println("2 - Movies");
-        System.out.println("3 - K-pop groups");
+        System.out.println("3 - Java related terms");
         retVal[1] = getInt(scanner,1,3);
         return retVal;
     }
