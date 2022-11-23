@@ -22,5 +22,9 @@ If a wrong guess is made, the player loses a life and some ASCII art is drawn.
 
 The game ends if the word is guessed or the player runs out of lives.
 
+## Technologies
+
+- Java
+
 ## Screenshot
 ![Screenshot](/screenshots/Screenshot%202022-10-03%20144322.jpg)
